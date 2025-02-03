@@ -1,10 +1,10 @@
-# Name of project
+# Amazon Clone
 
 > A longer description
 
 ## Table of contents
 
-- [Name of project](#name-of-project)
+- [Amazon Clone](#amazon-clone)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Screenshots](#screenshots)
