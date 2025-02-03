@@ -4,9 +4,10 @@
 
 > Give an overview of your project's design
 
-<!-- give an overview of your project's design -->
-<!-- describe the reasoning behind your group's design and wireframe -->
-<!-- include other centralized decisions like fonts, palates, ... -->
+- **Color Palette:** Amazon color palette.
+- **Typography:** Amazon typography.
+- **Grid System:** A flexible grid-based layout ensuring responsiveness across
+  different screen sizes.
 
 ---
 
@@ -14,4 +15,4 @@
 
 > Include your wireframe(s) and link to wireframe
 
-<!-- provide a link to your wireframe documenting on Figma, or wherever it is -->
+![wireframe](./wireframe.png)

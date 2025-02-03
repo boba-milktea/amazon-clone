@@ -14,7 +14,8 @@
     "Christiaan",
     "Verwijs",
     "Todos",
-    "wireframe"
+    "wireframe",
+    "flexbox"
   ],
   "ignorePaths": [
     "node_modules/**",
