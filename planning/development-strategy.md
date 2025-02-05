@@ -19,19 +19,17 @@ This feature is developed on a branch `header`.
 
 ### **HTML**
 
-- Create a `div` with class `navbar` for the navigation bar.
-- Add an `img` with class `logo` inside the `navbar` for branding.
-- Add a `nav` element containing `ul` and `li` for navigation links.
-- Include a `div` for the search bar component.
-- Add an `icon` section for user account, cart, and menu links.
+- Create a `header` with an id `navbar-main`
+- Inside `navbar-main` Create a `div` with an id `nav-belt` and a `div` with an
+  id `nav-main`
+- Under `navbar-belt` and `nav-main`, add three `div`s with class `nav-left`,
+  `nav-fill` and `nav-right`
 
 ### **CSS**
 
-- Style `navbar` with background color, display flex, and padding.
-- Style `logo` for proper sizing and alignment.
-- Style `nav` with proper spacing and hover effects for links.
-- Style the search bar with input field width, padding, and icons.
-- Style cart and account icons with proper alignment.
+- Style `navbar-main` with background color, display flex, position static, etc.
+- Style `nav-main` with max-height, padding, display flex and position.
+- Style `nav-left`, `nav-fill`and `nav-right` with height and display flex.
 
 ---
 
