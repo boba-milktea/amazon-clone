@@ -15,7 +15,8 @@
     "Verwijs",
     "Todos",
     "wireframe",
-    "flexbox"
+    "flexbox",
+    "alexa"
   ],
   "ignorePaths": [
     "node_modules/**",
