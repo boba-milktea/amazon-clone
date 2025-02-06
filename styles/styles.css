@@ -254,14 +254,6 @@ nav {
   font-size: 0.8rem;
 }
 
-.country-info .policies p {
-  font-size: 0.7rem;
-}
-
-.category .options p {
-  padding: 0.5rem;
-}
-
 .nav-logo:hover,
 .location:hover,
 .language-option:hover,
@@ -469,14 +461,24 @@ nav {
 }
 
 .policies .pages a {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-decoration: none;
-  color: white;
+  color: #ddd;
   margin-left: 1rem;
 }
 
 .policies .pages a:hover {
   text-decoration: underline;
+}
+
+.policies p {
+  color: #ddd;
+  font-size: 0.7rem;
+  margin-top: -5px;
+}
+
+.options p {
+  padding: 0.5rem;
 }
 
 /* Small Devices */
