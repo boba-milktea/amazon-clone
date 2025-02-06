@@ -37,7 +37,7 @@ CSS. The goal is to replicate the layout and styling of Amazon's homepage.
 
 ## Setup
 
-1. Git clone
+1. NPM run start
 2. NPM install
 
 ## Code Examples
@@ -75,7 +75,7 @@ Project is: _end_
 
 ## Inspiration
 
-Project by freeCodeCamp.org
+Project by Amazon.com.be
 
 ## Contact
 
