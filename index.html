@@ -1,263 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Amazon Clone</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/index.css" />
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <title>Amazon Clone</title>
-</head>
-
-<body>
-  <!-- begin of header -->
-  <header>
-    <nav>
-      <!-- nav-left including the logo and the location -->
-      <div class="nav-left">
-        <div class="nav-logo">
-          <img src="./public/assets/amazon-logo.png" alt="amazon logo" />
-          <span>.com.be</span>
+  <body>
+    <!-- begin of header -->
+    <header>
+      <nav>
+        <!-- nav-left including the logo and the location -->
+        <div class="nav-left">
+          <div class="nav-logo">
+            <img src="./public/assets/amazon-logo.png" alt="amazon logo" />
+            <span>.com.be</span>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="location-text">
+              <p class="top-text">Deliver to Brussels</p>
+              <p class="bottom-text">Update Location</p>
+            </div>
+          </div>
         </div>
-        <div class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          <div class="location-text">
-            <p class="top-text">Deliver to Brussels</p>
-            <p class="bottom-text">Update Location</p>
+
+        <!-- nav-center including the search bar -->
+        <div class="nav-center">
+          <select class="search-dropdown">
+            <option>All</option>
+            <option>All Departments</option>
+            <option>Arts &amp; Crafts</option>
+          </select>
+
+          <!-- this part can be rewrite later, put the i in the searchbar -->
+          <input
+            type="text"
+            placeholder="Search Amazon.com.be"
+            class="search-box"
+          />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- nav right including the language option and select languages -->
+        <div class="nav-right">
+          <div class="language-option">
+            <div class="flag">
+              <img src="./public/assets/be-flag.png" alt="belgium flag" />
+            </div>
+            <select class="select-language">
+              <option value="lan">EN</option>
+              <option value="lan">ES</option>
+              <option value="lan">AR</option>
+            </select>
+          </div>
+
+          <!-- account option -->
+          <div class="account-option">
+            <p class="top-text">Hello, sign in</p>
+            <select class="select-account">
+              <option value="Account">Account &amp; Lists</option>
+            </select>
+          </div>
+
+          <!-- return & order option  -->
+          <div class="order-option">
+            <p class="top-text">Returns</p>
+            <p class="bottom-text">&amp; Orders</p>
+          </div>
+
+          <!-- cart -->
+          <div class="cart">
+            <div class="cart-logo">
+              <img src="./public/assets/cart.png" alt="cart" />
+              <span id="cart-qty">0</span>
+            </div>
+            <span class="bottom-text">Basket</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- category options -->
+      <div class="category">
+        <div class="all-icon">
+          <i class="fa-solid fa-bars"></i>
+          <p class="list">All</p>
+        </div>
+
+        <div class="options">
+          <p>Keep Shopping For</p>
+          <p>Best Sellers</p>
+          <p>Prime</p>
+          <p>Prime Video</p>
+          <p>Today's Deals</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <main>
+      <div class="banner">
+        <div class="gradient"></div>
+        <img
+          src="./public/assets/amazon-banner.jpg"
+          alt="prime video with several video images"
+        />
+      </div>
+      <!-- product section  -->
+      <div class="items-container">
+        <div class="item-card">
+          <h2>The Valentine's Day Shop</h2>
+          <img
+            src="./public/assets/items-1.png"
+            alt="valentine's gift with a watch and a necklace"
+          />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Light up your space</h2>
+          <img
+            src="./public/assets/items-2.png"
+            alt="a photo with four different lamps"
+          />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Amazon Device</h2>
+          <img
+            src="./public/assets/items-3.png"
+            alt="a e-book device and alexa"
+          />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Handpicked music</h2>
+          <img
+            src="./public/assets/items-4.png"
+            alt="a surveillance camera and a Polaroid "
+          />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Gear up for greatness:sport finds under €20</h2>
+          <img src="./public/assets/items-5.png" alt="sports gears" />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Explore, create, discover, new passions</h2>
+          <img
+            src="./public/assets/items-6.png"
+            alt="a drone, an e-book, a camera and a radio"
+          />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Gear up your kitchen</h2>
+          <img src="./public/assets/items-7.png" alt="kitchen devices" />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+        <div class="item-card">
+          <h2>Your favorite jackets under €60</h2>
+          <img src="./public/assets/items-8.png" alt="handy tools" />
+          <p>
+            <a href="#">See more</a>
+          </p>
+        </div>
+      </div>
+      <div class="rhf-frame">
+        <div class="rhf-container">
+          <h2>See personalised recommendation</h2>
+          <button type="submit">Sign in</button>
+          <div class="rhf-anchor">
+            <span>New customer?&nbsp;</span><a href="#">Start here</a>
           </div>
         </div>
       </div>
+    </main>
+    <!-- end of main -->
 
-      <!-- nav-center including the search bar -->
-      <div class="nav-center">
-        <select class="search-dropdown">
-          <option>All</option>
-          <option>All Departments</option>
-          <option>Arts &amp; Crafts</option>
-        </select>
+    <!-- start of footer -->
+    <footer class="footer">
+      <div class="back-to-top">
+        <a href="#top" class="back-option"> Back to top </a>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-col">
+          <h2>Get to Know Us</h2>
+          <a href="#">Careers</a>
+          <a href="#">Press Releases</a>
+          <a href="#">About Amazon</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Legal Notice</a>
+          <a href="#">Amazon Science</a>
+          <a href="#">Welcome to Amazon.com.be</a>
+        </div>
 
-        <!-- this part can be rewrite later, put the i in the searchbar -->
-        <input type="text" placeholder="Search Amazon.com.be" class="search-box" />
-        <div class="search-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="footer-links-col">
+          <h2>Make Money with Us</h2>
+          <a href="#">Advertise Your Products</a>
+          <a href="#">Protect and build your brand</a>
+          <a href="#">Sell on Amazon</a>
+          <a href="#">Fulfilment by Amazon</a>
+          <a href="#">Associates Programme</a>
+          <a href="#">Supply to Amazon</a>
+          <a href="#">Independently Publish with Us</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h2>Amazon Payment Methods</h2>
+          <a href="#">Payment Methods Help</a>
+          <a href="#">Bancontact</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h2>Let Us Help You</h2>
+          <a href="#">Track Packages or View Orders</a>
+          <a href="#">Delivery Rates &amp; Policies</a>
+          <a href="#">Amazon Prime</a>
+          <a href="#">Returns &amp; Replacements</a>
+          <a href="#">Recycling</a>
+          <a href="#">Manage Your Content and Devices</a>
+          <a href="#">Recalls and Product Safety Alerts</a>
+          <a href="#">Amazon Mobile App</a>
+          <a href="#">Customer Support</a>
+          <a href="#">Report illegal content</a>
         </div>
       </div>
 
-      <!-- nav right including the language option and select languages -->
-      <div class="nav-right">
-        <div class="language-option">
-          <div class="flag">
-            <img src="./public/assets/be-flag.png" alt="belgium flag" />
-          </div>
-          <select class="select-language">
-            <option value="lan">EN</option>
-            <option value="lan">ES</option>
-            <option value="lan">AR</option>
+      <div class="country-info">
+        <div class="logo">
+          <img src="./public/assets/amazon-logo.png" alt="amazon-logo" />
+        </div>
+        <div class="options">
+          <select>
+            <option value="En">🌐&nbsp;English</option>
+          </select>
+
+          <select>
+            <option value="BE">🚩&nbsp;Belgium</option>
           </select>
         </div>
-
-        <!-- account option -->
-        <div class="account-option">
-          <p class="top-text">Hello, sign in</p>
-          <select class="select-account">
-            <option value="Account">Account &amp; Lists</option>
-          </select>
+      </div>
+      <div class="policies">
+        <div class="pages">
+          <a href="#">Conditions of Use &amp; Sales</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Legal Notice</a>
+          <a href="#">Cookies Notice</a>
+          <a href="#">Interest-Based Ads Notice</a>
         </div>
-
-        <!-- return & order option  -->
-        <div class="order-option">
-          <p class="top-text">Returns</p>
-          <p class="bottom-text">&amp; Orders</p>
-        </div>
-
-        <!-- cart -->
-        <div class="cart">
-          <div class="cart-logo">
-            <img src="./public/assets/cart.png" alt="cart" />
-            <span id="cart-qty">0</span>
-          </div>
-          <span class="bottom-text">Basket</span>
-        </div>
+        <p>&#169; 1996-2025, Amazon.com, Inc. or its affiliates</p>
       </div>
-    </nav>
-
-    <!-- category options -->
-    <div class="category">
-      <div class="all-icon">
-        <i class="fa-solid fa-bars"></i>
-        <p class="list">All</p>
-      </div>
-
-      <div class="options">
-        <p>Keep Shopping For</p>
-        <p>Best Sellers</p>
-        <p>Prime</p>
-        <p>Prime Video</p>
-        <p>Today's Deals</p>
-      </div>
-    </div>
-  </header>
-
-  <!-- end of header -->
-
-  <!-- start of main -->
-  <main>
-    <div class="banner">
-      <div class="gradient"></div>
-      <img src="./public/assets/amazon-banner.jpg" alt="prime video with several video images" />
-    </div>
-    <!-- product section  -->
-    <div class="items-container">
-      <div class="item-card">
-        <h2>The Valentine's Day Shop</h2>
-        <img src="./public/assets/items-1.png" alt="valentine's gift with a watch and a necklace" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Light up your space</h2>
-        <img src="./public/assets/items-2.png" alt="a photo with four different lamps" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Amazon Device</h2>
-        <img src="./public/assets/items-3.png" alt="a e-book device and alexa" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Handpicked music</h2>
-        <img src="./public/assets/items-4.png" alt="a surveillance camera and a Polaroid " />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Gear up for greatness:sport finds under €20</h2>
-        <img src="./public/assets/items-5.png" alt="sports gears" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Explore, create, discover, new passions</h2>
-        <img src="./public/assets/items-6.png" alt="a drone, an e-book, a camera and a radio" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Gear up your kitchen</h2>
-        <img src="./public/assets/items-7.png" alt="kitchen devices" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-      <div class="item-card">
-        <h2>Your favorite jackets under €60</h2>
-        <img src="./public/assets/items-8.png" alt="handy tools" />
-        <p>
-          <a href="#">See more</a>
-        </p>
-      </div>
-    </div>
-    <div class="rhf-frame">
-      <div class="rhf-container">
-        <h2>See personalised recommendation</h2>
-        <button type="submit">Sign in</button>
-        <div class="rhf-anchor">
-          <span>New customer?&nbsp;</span><a href="#">Start here</a>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- end of main -->
-
-  <!-- start of footer -->
-  <footer class="footer">
-    <div class="back-to-top">
-      <a href="#" class="back-option"> Back to top </a>
-    </div>
-    <div class="footer-links">
-      <div class="footer-links-col">
-        <h2>Get to Know Us</h2>
-        <a href="#">Careers</a>
-        <a href="#">Press Releases</a>
-        <a href="#">About Amazon</a>
-        <a href="#">Sustainability</a>
-        <a href="#">Legal Notice</a>
-        <a href="#">Amazon Science</a>
-        <a href="#">Welcome to Amazon.com.be</a>
-      </div>
-
-      <div class="footer-links-col">
-        <h2>Make Money with Us</h2>
-        <a href="#">Advertise Your Products</a>
-        <a href="#">Protect and build your brand</a>
-        <a href="#">Sell on Amazon</a>
-        <a href="#">Fulfilment by Amazon</a>
-        <a href="#">Associates Programme</a>
-        <a href="#">Supply to Amazon</a>
-        <a href="#">Independently Publish with Us</a>
-      </div>
-
-      <div class="footer-links-col">
-        <h2>Amazon Payment Methods</h2>
-        <a href="#">Payment Methods Help</a>
-        <a href="#">Bancontact</a>
-      </div>
-
-      <div class="footer-links-col">
-        <h2>Let Us Help You</h2>
-        <a href="#">Track Packages or View Orders</a>
-        <a href="#">Delivery Rates &amp; Policies</a>
-        <a href="#">Amazon Prime</a>
-        <a href="#">Returns &amp; Replacements</a>
-        <a href="#">Recycling</a>
-        <a href="#">Manage Your Content and Devices</a>
-        <a href="#">Recalls and Product Safety Alerts</a>
-        <a href="#">Amazon Mobile App</a>
-        <a href="#">Customer Support</a>
-        <a href="#">Report illegal content</a>
-      </div>
-    </div>
-
-    <div class="country-info">
-      <div class="logo">
-        <img src="./public/assets/amazon-logo.png" alt="amazon-logo" />
-      </div>
-      <div class="options">
-        <select>
-          <option value="En">🌐&nbsp;English</option>
-        </select>
-
-        <select>
-          <option value="BE">🚩&nbsp;Belgium</option>
-        </select>
-      </div>
-    </div>
-    <div class="policies">
-      <div class="pages">
-        <a href="#">Conditions of Use &amp; Sales</a>
-        <a href="#">Privacy Notice</a>
-        <a href="#">Legal Notice</a>
-        <a href="#">Cookies Notice</a>
-        <a href="#">Interest-Based Ads Notice</a>
-      </div>
-      <p>&#169; 1996-2025, Amazon.com, Inc. or its affiliates</p>
-    </div>
-  </footer>
-  <!-- start of footer -->
-</body>
-
+    </footer>
+    <!-- start of footer -->
+  </body>
 </html>

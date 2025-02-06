@@ -1,6 +1,6 @@
 # Amazon Clone
 
-> A longer description
+> A simple Amazon clone built using HTML and CSS.
 
 ## Table of contents
 
@@ -22,47 +22,56 @@
 
 ## General info
 
-> A short description
+This project is a basic clone of the Amazon website built using only HTML and
+CSS. The goal is to replicate the layout and styling of Amazon's homepage.
 
 ## Screenshots
 
-![Example screenshot](./planning/screenshot.jpg)
+![Example screenshot](./planning/screenshot.png)
 
 ## Technologies
 
-- Node 14.16.0
-- VSC code
-- JavaScript
-- ...
-- ...
+- HTML5
+- CSS3
+- Visual Studio Code
 
 ## Setup
 
-- `npm run start`
+1. Git clone
+2. NPM install
 
 ## Code Examples
 
-```js
-// the hello world program
-console.log("Hello World");
+```html
+<div class="rhf-frame">
+  <div class="rhf-container">
+    <h2>See personalised recommendation</h2>
+    <button type="submit">Sign in</button>
+    <div class="rhf-anchor">
+      <span>New customer?&nbsp;</span><a href="#">Start here</a>
+    </div>
+  </div>
+</div>
 ```
 
 ## Features
 
-List of features ready and Todos for future development
+List of features ready and Todos for future development:
 
--
--
--
+- [x] Basic homepage layout
+- [x] Hero Banner
+- [x] Product grid
+- [x] Back to Top
+- [x] Footer
 
 To-do list:
 
--
--
+- Implement hover effects
+- Improve responsiveness
 
 ## Status
 
-Project is: _in progress_
+Project is: _end_
 
 ## Inspiration
 
@@ -70,7 +79,7 @@ Project by freeCodeCamp.org
 
 ## Contact
 
-By [Name]
+By [Boba-Milktea]("https://github.com/boba-milktea")
 
 ## Instructions for use
 

@@ -19,7 +19,9 @@
     "alexa",
     "personalised",
     "Bancontact",
-    "Fulfilment"
+    "Fulfilment",
+    "Boba",
+    "Milktea"
   ],
   "ignorePaths": [
     "node_modules/**",
