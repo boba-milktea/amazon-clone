@@ -16,7 +16,10 @@
     "Todos",
     "wireframe",
     "flexbox",
-    "alexa"
+    "alexa",
+    "personalised",
+    "Bancontact",
+    "Fulfilment"
   ],
   "ignorePaths": [
     "node_modules/**",
