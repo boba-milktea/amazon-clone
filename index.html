@@ -94,7 +94,6 @@
           </div>
         </div>
       </nav>
-
       <!-- category options -->
       <div class="category">
         <div class="all-icon">
@@ -105,17 +104,26 @@
         <div class="options">
           <p>Keep Shopping For</p>
           <p>Best Sellers</p>
-          <p>Prime</p>
+          <div class="highlight">
+            <p class="no-outline">Prime</p>
+            <span class="arrow-down"></span>
+          </div>
           <p>Prime Video</p>
           <p>Today's Deals</p>
         </div>
+        <div class="hidden prime-popup">
+          <img
+            src="./public/assets/prime-popup.png"
+            alt="prime sign up popup"
+          />
+        </div>
       </div>
     </header>
-
     <!-- end of header -->
 
     <!-- start of main -->
     <main>
+      <div class="hidden overlay"></div>
       <div class="banner">
         <div class="gradient"></div>
         <img
@@ -283,6 +291,7 @@
         <p>&#169; 1996-2025, Amazon.com, Inc. or its affiliates</p>
       </div>
     </footer>
-    <!-- start of footer -->
+    <!-- end of footer -->
+    <script src="./src/app.js"></script>
   </body>
 </html>
